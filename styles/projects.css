@@ -1,0 +1,104 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.projects__maintext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+    padding: 60px 20px;
+    color: var(--txt-color);
+}
+
+.projects__maintext-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.125;
+    color: var(--gren-color);
+}
+
+.projects__maintext-description {
+    font-size: 1.2rem;
+}
+
+.project__areas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+}
+
+.project__areas-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 10px;
+    box-shadow: 0 ;
+}
+
+.project__areas-img {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    height: 300px;
+    z-index: 200;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+.project__areas-img > img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(.25);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project__areas-description {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    justify-self: center;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 200;
+}
+
+.project__areas-description > a, .project__more {
+    text-decoration: none;
+    color: white;
+    background-color: var(--gren-color);
+    display: flex;
+    padding: 15px 25px;
+    border-radius: 8px;
+    align-self: center;
+    line-height: .8;
+}
+
+.project__more {
+    border: 2px solid var(--gren-color);
+    color: var(--gren-color);
+    background-color: var(--bg-color);
+    margin: 50px;
+    font-size: 1.1rem;
+
+    transition-property: color background-color;
+    transition-duration: .3s;
+}
+
+.project__more:hover {
+    color: var(--bg-color);
+    background-color: var(--gren-color);
+}

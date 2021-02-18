@@ -1,0 +1,85 @@
+@media only screen and (min-width: 769px) {
+    .about__maintext-description {
+        width: 60%;
+        max-width: 1200px;
+    }
+
+    .about__areas, .footer__contact {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .footer__contact {
+        align-items: center;
+        justify-items: center;
+        min-height: 100px;
+    }
+
+    .about__areas-card {
+        border-bottom: none;
+        border-right: 1px solid rgb(105, 105, 105);
+    }
+
+    .project__areas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .project__areas-description {
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: .6s;
+    }
+
+    .project__areas-img > img {
+        filter: brightness(1);
+        transition-property: filter transform;
+        transition-duration: .6s;
+    }
+
+    .project__areas-card:hover > .project__areas-description {
+        opacity: 1;
+    }
+    .project__areas-card:hover > .project__areas-img > img {
+        transform: skewY(2deg);
+        filter: brightness(.25);
+    }
+
+    .about__maintext-title {
+        font-size: 2rem;
+    }
+
+    .header {
+        gap: 100px;
+    }
+
+    .header__text {
+        margin-top: 90px;
+    }
+
+    .header__text-description {
+        font-size: 1.4rem;
+    }
+
+    .header__pic-img {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    .project__areas {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .about__areas {
+        max-width: 1200px;
+    }
+
+    .project__areas {
+        max-width: 1260px;
+    }
+
+    .footer__contact {
+        max-width: 1180px;
+    }
+}

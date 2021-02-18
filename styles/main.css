@@ -1,0 +1,14 @@
+@import "about.css";
+@import "projects.css";
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    line-height: 1.5;
+    font-family: "europa", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,18 @@
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+:root {
+    --bg-color: #222;
+    --txt-color: #ccc;
+    --gren-color:  #86ce26;
+}
+
+img {
+    max-width: 100%;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+}
